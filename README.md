@@ -1,0 +1,29 @@
+# SimpleCCForm
+
+[![CI Status](https://img.shields.io/travis/Jean-Marc Boullianne/SimpleCCForm.svg?style=flat)](https://travis-ci.org/Jean-Marc Boullianne/SimpleCCForm)
+[![Version](https://img.shields.io/cocoapods/v/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
+[![License](https://img.shields.io/cocoapods/l/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
+[![Platform](https://img.shields.io/cocoapods/p/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+SimpleCCForm is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'SimpleCCForm'
+```
+
+## Author
+
+Jean-Marc Boullianne, jboullianne@gmail.com
+
+## License
+
+SimpleCCForm is available under the MIT license. See the LICENSE file for more info.
