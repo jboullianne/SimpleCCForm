@@ -1,0 +1,22 @@
+{
+  "name": "SimpleCCForm",
+  "version": "0.1.0",
+  "summary": "A short description of SimpleCCForm.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jean-Marc Boullianne/SimpleCCForm",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jean-Marc Boullianne": "jboullianne@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Jean-Marc Boullianne/SimpleCCForm.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SimpleCCForm/Classes/**/*"
+}

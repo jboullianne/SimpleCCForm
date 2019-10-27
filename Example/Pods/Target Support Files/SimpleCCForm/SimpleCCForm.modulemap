@@ -1,0 +1,6 @@
+framework module SimpleCCForm {
+  umbrella header "SimpleCCForm-umbrella.h"
+
+  export *
+  module * { export * }
+}
