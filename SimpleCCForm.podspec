@@ -19,17 +19,18 @@ Pod::Spec.new do |s|
 
   s.description      = 'Easy drop-in Credit Card form that animates with user input.'
 
-  s.homepage         = 'https://github.com/Jean-Marc Boullianne/SimpleCCForm'
+  s.homepage         = 'https://github.com/jboullianne/SimpleCCForm'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jean-Marc Boullianne' => 'jboullianne@gmail.com' }
-  s.source           = { :git => 'https://github.com/Jean-Marc Boullianne/SimpleCCForm.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jboullianne/SimpleCCForm.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SimpleCCForm/Classes/**/*'
   
+  s.swift_versions = '4.0'
   # s.resource_bundles = {
   #   'SimpleCCForm' => ['SimpleCCForm/Assets/*.png']
   # }

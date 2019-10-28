@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import SimpleCCForm
 
 class ViewController: UIViewController {
 
+    let simpleCCForm = SimpleCCForm(frame: CGRect(x: 7, y: 50, width: 400, height: 600))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        view.addSubview(simpleCCForm)
     }
 
     override func didReceiveMemoryWarning() {
