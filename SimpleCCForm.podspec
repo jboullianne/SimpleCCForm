@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = '*.swift'
   
-  s.swift_versions = '4.0'
+  s.swift_version = '4.0'
   # s.resource_bundles = {
   #   'SimpleCCForm' => ['SimpleCCForm/Assets/*.png']
   # }
