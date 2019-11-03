@@ -6,13 +6,13 @@
 //
 
 import UIKit
-class CardManager {
+public class CardManager {
     
-    struct CardType {
-        var IINs:[String]
-        var lengths:[Int]
-        var name:String
-        var icon:UIImage?
+    public struct CardType {
+        public var IINs:[String]
+        public var lengths:[Int]
+        public var name:String
+        public var icon:UIImage?
     }
     
     static let Cards:[CardType] = [
@@ -44,7 +44,7 @@ class CardManager {
         return lengths
     }
     
-    static func calculateCardType(cardNumber: String) -> [CardType] {
+    public static func calculateCardType(cardNumber: String) -> [CardType] {
         return Cards.filter({ (card) -> Bool in
             var match = false
             for IIN in card.IINs {
@@ -54,14 +54,6 @@ class CardManager {
             }
             return match
         })
-    }
-    
-    static func getBundle() -> Bundle? {
-        let bundle = Bundle(for: CardManager.self)
-        let bundleURL = bundle.resourceURL?.appendingPathComponent("SimpleCCForm.bundle")
-        let resourceBundle = Bundle(url: bundleURL!)
-        
-        return resourceBundle
     }
 }
 

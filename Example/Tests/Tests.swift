@@ -6,19 +6,56 @@ import SimpleCCForm
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
+        
+        describe("Card Manager") {
+            it("Can identify Visa") {
+                let result = CardManager.calculateCardType(cardNumber: "4")
+                expect(result.count) >= 1
+                expect(result.contains(where: { (card) -> Bool in
+                    card.name == "Visa"
+                })) == true
+                
+            }
+            
+            it("Can identify Amex") {
+                let result = CardManager.calculateCardType(cardNumber: "37")
+                expect(result.count) >= 1
+                expect(result.contains(where: { (card) -> Bool in
+                    card.name == "American Express"
+                })) == true
+                
+            }
+            
+            it("Can identify Bankcard") {
+                let result = CardManager.calculateCardType(cardNumber: "560223")
+                expect(result.count) >= 1
+                expect(result.contains(where: { (card) -> Bool in
+                    card.name == "Bankcard"
+                })) == true
+                
+            }
+            
+            it("Can identify Discover") {
+                let result = CardManager.calculateCardType(cardNumber: "622127")
+                expect(result.count) >= 1
+                expect(result.contains(where: { (card) -> Bool in
+                    card.name == "Discover Card"
+                })) == true
+                
+            }
+            
+            it("Can identify Mastercard") {
+                let result = CardManager.calculateCardType(cardNumber: "51")
+                expect(result.count) >= 1
+                expect(result.contains(where: { (card) -> Bool in
+                    card.name == "Mastercard"
+                })) == true
+                
+            }
+        }
+        
+        /*
         describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
             
             context("these will pass") {
 
@@ -46,5 +83,6 @@ class TableOfContentsSpec: QuickSpec {
                 }
             }
         }
+         */
     }
 }
