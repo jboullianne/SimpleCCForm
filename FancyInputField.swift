@@ -82,11 +82,7 @@ extension FancyTextField: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = accentColor.cgColor
-        
-        
         delegate?.textFieldDidBeginEditing?(textField)
-        print("Delegate is nil:", delegate == nil, delegate?.textFieldDidBeginEditing)
-        
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
@@ -136,7 +132,7 @@ extension UITextField {
         let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
         
         let toolbar: UIToolbar = UIToolbar()
-        toolbar.barStyle = .default
+        toolbar.barStyle = UIBarStyle.default
         toolbar.items = [
             UIBarButtonItem(title: "Cancel", style: .plain, target: onCancel.target, action: onCancel.action),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),

@@ -221,9 +221,7 @@ extension SimpleCCForm: UITextFieldDelegate {
                 let cardTypes = CardManager.calculateCardType(cardNumber: updatedText)
                 
                 if cardTypes.count == 1 {
-                    print("Card Type is:", cardTypes[0].name, cardTypes[0].icon)
                     cardImage.image = cardTypes[0].icon
-                    
                 }
                 
                 var displayedText = ""

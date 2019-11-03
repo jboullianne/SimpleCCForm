@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let width = self.view.frame.width
-        let height = self.view.frame.height
         let simpleCCForm = SimpleCCForm(frame: CGRect(x: 10, y: 50, width: width - 20, height: 600))
         view.addSubview(simpleCCForm)
     }
