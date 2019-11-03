@@ -213,12 +213,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = W3U8G84792;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = W3U8G84792;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -507,7 +505,7 @@
 			baseConfigurationReference = 72EB76C8488B84650C571C0F /* Pods-SimpleCCForm_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W3U8G84792;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleCCForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -523,7 +521,7 @@
 			baseConfigurationReference = 88647AF5981397DE3E7EC01C /* Pods-SimpleCCForm_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W3U8G84792;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimpleCCForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -538,7 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0596AA1F24DB32EC124AD6D7 /* Pods-SimpleCCForm_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = W3U8G84792;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -561,7 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 147289CE0A11EEE3BB53C5B5 /* Pods-SimpleCCForm_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = W3U8G84792;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
