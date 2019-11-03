@@ -85,7 +85,6 @@
 		8C3F5E7FF0571B63D4DAA2825C9705D1 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF0B825EEC72D8223CE5340941DBD2 /* QuickSelectedTestSuiteBuilder.swift */; };
 		8C8A4FFF2365F2D50071E480 /* SimpleCCForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A4FFE2365F2D50071E480 /* SimpleCCForm.swift */; };
 		8C8A5001236641BD0071E480 /* FancyInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A5000236641BD0071E480 /* FancyInputField.swift */; };
-		8C8A5003236653D90071E480 /* MonthYearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A5002236653D90071E480 /* MonthYearPickerView.swift */; };
 		8C8A5005236658A50071E480 /* FancyExpirationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A5004236658A50071E480 /* FancyExpirationField.swift */; };
 		8C8A50072366726E0071E480 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A50062366726E0071E480 /* Constants.swift */; };
 		8CB9325284A6E8E782D34AF833480CA3 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA40E22062FF97E1C92F80701C185C9 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -337,7 +336,6 @@
 		8C1195FCC3BA982EF6A2BA54BFB5B906 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		8C8A4FFE2365F2D50071E480 /* SimpleCCForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCCForm.swift; sourceTree = "<group>"; };
 		8C8A5000236641BD0071E480 /* FancyInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyInputField.swift; sourceTree = "<group>"; };
-		8C8A5002236653D90071E480 /* MonthYearPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthYearPickerView.swift; sourceTree = "<group>"; };
 		8C8A5004236658A50071E480 /* FancyExpirationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyExpirationField.swift; sourceTree = "<group>"; };
 		8C8A50062366726E0071E480 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8CD609D1D873680841BE65FDD0B996EA /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
@@ -667,7 +665,6 @@
 				8C8A4FFE2365F2D50071E480 /* SimpleCCForm.swift */,
 				8C8A5000236641BD0071E480 /* FancyInputField.swift */,
 				8C8A5004236658A50071E480 /* FancyExpirationField.swift */,
-				8C8A5002236653D90071E480 /* MonthYearPickerView.swift */,
 				8C8A50062366726E0071E480 /* Constants.swift */,
 				EB001E855FFBF0F0A2EDADBB7A2855F6 /* Pod */,
 				1482C49248D8751F449BB08495FBD5FA /* Support Files */,
@@ -1204,7 +1201,6 @@
 			files = (
 				EB91F86CE9D244D9A4F1BBE78EC172CC /* ReplaceMe.swift in Sources */,
 				8C8A5005236658A50071E480 /* FancyExpirationField.swift in Sources */,
-				8C8A5003236653D90071E480 /* MonthYearPickerView.swift in Sources */,
 				8C8A5001236641BD0071E480 /* FancyInputField.swift in Sources */,
 				8C8A50072366726E0071E480 /* Constants.swift in Sources */,
 				8C8A4FFF2365F2D50071E480 /* SimpleCCForm.swift in Sources */,
