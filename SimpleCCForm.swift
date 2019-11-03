@@ -167,6 +167,7 @@ public class SimpleCCForm: UIView {
         ccCVV = FancyTextField(frame: CGRect(x: (formWidth - FORM_PADDING) - (fieldWidth / 3.0), y: formHeight - ((FORM_PADDING + fieldHeight) * 2), width: fieldWidth / 3.0, height: fieldHeight))
         ccCVV.titleLabel.text = "CVV"
         ccCVV.delegate = self
+        ccCVV.textField.returnKeyType = .done
         if #available(iOS 10.0, *) {
             ccCVV.textField.textContentType = .creditCardNumber
         }
@@ -209,6 +210,14 @@ extension SimpleCCForm: UITextFieldDelegate {
         if textField == ccNum.textField {
             if let text = textField.text, let textRange = Range(range, in: text) {
                 let updatedText = text.replacingCharacters(in: textRange, with: string)
+                
+                // Allow only numbers
+                if let _ = string.rangeOfCharacter(from: CharacterSet.alphanumerics.symmetricDifference(CharacterSet.letters).inverted) { return false }
+                
+                if updatedText.count > 19 {
+                    return false
+                }
+                
                 let cardTypes = CardManager.calculateCardType(cardNumber: updatedText)
                 
                 if cardTypes.count == 1 {
@@ -229,7 +238,10 @@ extension SimpleCCForm: UITextFieldDelegate {
                 numberLabel.text = displayedText
             }
         } else if textField == ccName.textField {
+            print("New String:", string)
             if let text = textField.text, let textRange = Range(range, in: text) {
+                // Allow only Letters
+                //if let _ = string.rangeOfCharacter(from: CharacterSet.alphanumerics.symmetricDifference(CharacterSet.decimalDigits).inverted) { return false }
                 let updatedText = text.replacingCharacters(in: textRange, with: string)
                 nameLabel.text = updatedText
             }

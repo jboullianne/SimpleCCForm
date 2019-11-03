@@ -38,6 +38,7 @@ class FancyExpirationField: FancyTextField {
         yearTextField.delegate = self
         yearTextField.placeholder = "YY"
         yearTextField.keyboardType = .numberPad
+        yearTextField.addDoneCancelToolbar()
 
         self.addSubview(yearTextField)
         
