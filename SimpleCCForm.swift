@@ -182,7 +182,8 @@ public class SimpleCCForm: UIView {
     }
     
     @objc func submitButtonPressed(sender: UIButton) {
-        print("Submit Button pressed:", ccNum.textField.text, ccName.textField.text, ccExpDate.textField.text, ccExpDate.yearTextField.text, ccCVV.textField.text)
+        // prints CreditCard Details to output.
+        //print("Submit Button pressed:", ccNum.textField.text, ccName.textField.text, ccExpDate.textField.text, ccExpDate.yearTextField.text, ccCVV.textField.text)
     }
 }
 
