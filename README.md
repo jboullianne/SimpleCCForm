@@ -1,9 +1,9 @@
 # SimpleCCForm
 
 [![CI Status](https://img.shields.io/travis/jboullianne/SimpleCCForm.svg?style=flat)](https://travis-ci.org/jboullianne/SimpleCCForm)
-[![Version](https://img.shields.io/cocoapods/v/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
-[![License](https://img.shields.io/cocoapods/l/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
-[![Platform](https://img.shields.io/cocoapods/p/SimpleCCForm.svg?style=flat)](https://cocoapods.org/pods/SimpleCCForm)
+[![Version](https://img.shields.io/cocoapods/v/SimpleCCForm)](https://cocoapods.org/pods/SimpleCCForm)
+[![License](https://img.shields.io/cocoapods/l/SimpleCCForm)](https://cocoapods.org/pods/SimpleCCForm)
+[![Platform](https://img.shields.io/cocoapods/p/SimpleCCForm)](https://cocoapods.org/pods/SimpleCCForm)
 
 ## Example
 
