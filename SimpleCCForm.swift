@@ -16,7 +16,7 @@ public class SimpleCCForm: UIView {
     lazy var formColor:UIColor = UIColor.white
     
     // Containers
-    lazy var card:UIView = UIView()
+    lazy var card:CreditCardView = CreditCardView()
     lazy var form:UIView = UIView()
     
     // Components
@@ -58,12 +58,14 @@ public class SimpleCCForm: UIView {
         let cardWidth:CGFloat = parentWidth * 0.8
         let cardHeight:CGFloat = cardWidth * 0.627
         
-        card = UIView(frame: CGRect(x: (parentWidth - cardWidth)/2.0, y: 20, width: cardWidth, height: cardHeight))
-        card.backgroundColor = cardColor
-        card.layer.cornerRadius = 10.0
+        card = CreditCardView(frame: CGRect(x: (parentWidth - cardWidth)/2.0, y: 20, width: cardWidth, height: cardHeight))
+        //card = UIView(frame: CGRect(x: (parentWidth - cardWidth)/2.0, y: 20, width: cardWidth, height: cardHeight))
+        //card.backgroundColor = UIColor.clear//cardColor
+        //card.layer.cornerRadius = 10.0
         card.layer.applySketchShadow(color: .black, alpha: 0.5, x: 0, y: 2, blur: 60, spread: 0)
         addSubview(card)
         
+        /*
         numberLabel = UILabel(frame: CGRect(x: CARD_PADDING, y: (cardHeight/2.0) - 10, width: cardWidth - (CARD_PADDING * 2), height: 40))
         numberLabel.text = "#"
         numberLabel.textColor = UIColor.white
@@ -94,6 +96,9 @@ public class SimpleCCForm: UIView {
         cardImage = UIImageView(frame: CGRect(x: cardWidth - (CARD_PADDING + 100), y: CARD_PADDING, width: 100, height: 100))
         cardImage.contentMode = .scaleAspectFit
         card.addSubview(cardImage)
+        */
+        
+        
     }
     
     func setupFormView() {
@@ -133,6 +138,8 @@ public class SimpleCCForm: UIView {
         }
         
         form.addSubview(submitButton)
+        
+        submitButton.addTarget(self, action: #selector(submitButtonPressed), for: .touchUpInside)
     }
     
     func setupFields() {
@@ -172,6 +179,10 @@ public class SimpleCCForm: UIView {
             ccCVV.textField.textContentType = .creditCardNumber
         }
         form.addSubview(ccCVV)
+    }
+    
+    @objc func submitButtonPressed(sender: UIButton) {
+        print("Submit Button pressed:", ccNum.textField.text, ccName.textField.text, ccExpDate.textField.text, ccExpDate.yearTextField.text, ccCVV.textField.text)
     }
 }
 
@@ -233,7 +244,7 @@ extension SimpleCCForm: UITextFieldDelegate {
                         displayedText += " "
                     }
                 }
-                numberLabel.text = displayedText
+                card.numberLabel.text = displayedText
             }
         } else if textField == ccName.textField {
             print("New String:", string)
@@ -241,17 +252,24 @@ extension SimpleCCForm: UITextFieldDelegate {
                 // Allow only Letters
                 //if let _ = string.rangeOfCharacter(from: CharacterSet.alphanumerics.symmetricDifference(CharacterSet.decimalDigits).inverted) { return false }
                 let updatedText = text.replacingCharacters(in: textRange, with: string)
-                nameLabel.text = updatedText
+                card.nameLabel.text = updatedText
             }
         } else if textField == ccExpDate.textField {
             if let text = textField.text, let textRange = Range(range, in: text) {
                 let updatedText = text.replacingCharacters(in: textRange, with: string)
-                expLabel.text = "\(updatedText.prefix(2))/\(ccExpDate.yearTextField.text ?? "YY")"
+                card.expLabel.text = "\(updatedText.prefix(2))/\(ccExpDate.yearTextField.text ?? "YY")"
             }
         } else if textField == ccExpDate.yearTextField {
             if let text = textField.text, let textRange = Range(range, in: text) {
                 let updatedText = text.replacingCharacters(in: textRange, with: string)
-                expLabel.text = "\(ccExpDate.textField.text ?? "MM")/\(updatedText.prefix(2))"
+                card.expLabel.text = "\(ccExpDate.textField.text ?? "MM")/\(updatedText.prefix(2))"
+            }
+        } else if textField == ccCVV.textField {
+            if let text = textField.text, let textRange = Range(range, in: text) {
+                let updatedText = text.replacingCharacters(in: textRange, with: string)
+                if updatedText.count > 4 {
+                    return false
+                }
             }
         }
         

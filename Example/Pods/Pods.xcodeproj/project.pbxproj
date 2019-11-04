@@ -87,6 +87,7 @@
 		8C8A5001236641BD0071E480 /* FancyInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A5000236641BD0071E480 /* FancyInputField.swift */; };
 		8C8A5005236658A50071E480 /* FancyExpirationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A5004236658A50071E480 /* FancyExpirationField.swift */; };
 		8C8A50072366726E0071E480 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A50062366726E0071E480 /* Constants.swift */; };
+		8C8A500E236FA8160071E480 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A500D236FA8160071E480 /* CreditCardView.swift */; };
 		8CB9325284A6E8E782D34AF833480CA3 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA40E22062FF97E1C92F80701C185C9 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBFBABD983BA19E333E0EB1149C3BDF /* FBSnapshotTestCase.m */; };
 		8D16EAB20CD849E7DC1B1EDCEF61067D /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE5915B278F2BB7FDC396B332969DEB /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -337,6 +338,7 @@
 		8C8A5000236641BD0071E480 /* FancyInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyInputField.swift; sourceTree = "<group>"; };
 		8C8A5004236658A50071E480 /* FancyExpirationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyExpirationField.swift; sourceTree = "<group>"; };
 		8C8A50062366726E0071E480 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C8A500D236FA8160071E480 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 		8CD609D1D873680841BE65FDD0B996EA /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		91195C3FE8813E08CCB9E5E84E52C13D /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/QuickObjectiveC/QuickSpec.h; sourceTree = "<group>"; };
 		918E7EE17F659B1117726B790FFECC25 /* ThrowAssertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowAssertion.swift; path = Sources/Nimble/Matchers/ThrowAssertion.swift; sourceTree = "<group>"; };
@@ -663,6 +665,7 @@
 				8C8A5000236641BD0071E480 /* FancyInputField.swift */,
 				8C8A5004236658A50071E480 /* FancyExpirationField.swift */,
 				8C8A50062366726E0071E480 /* Constants.swift */,
+				8C8A500D236FA8160071E480 /* CreditCardView.swift */,
 				EB001E855FFBF0F0A2EDADBB7A2855F6 /* Pod */,
 				1482C49248D8751F449BB08495FBD5FA /* Support Files */,
 			);
@@ -1201,6 +1204,7 @@
 				8C8A50072366726E0071E480 /* Constants.swift in Sources */,
 				8C8A4FFF2365F2D50071E480 /* SimpleCCForm.swift in Sources */,
 				7838AA41C1D07707C71DF8484739B971 /* SimpleCCForm-dummy.m in Sources */,
+				8C8A500E236FA8160071E480 /* CreditCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
